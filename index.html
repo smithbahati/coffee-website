@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Co. - Our Coffee, Your Moment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/logo.png" alt="Coffee Co. Logo">
+            <span><b>Coffee Co.</b></span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Menu.html">Menu</a>
+            <a href="About Us.html">About Us</a>
+            <a href="Contact Us.html">Contact Us</a>
+            <a href="Review Us.html">Review Us</a>
+        </nav>
+        <div class="icons">
+            <!-- Cart Icon -->
+            <a href="#" class="cart-icon" id="cartBtn">🛒</a>
+            <!-- Search Icon -->
+            <a href="#" class="search-icon" id="searchBtn">🔍</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Our Coffee, Your Moment.</h1>
+                <p><b>Awaken your senses with our artisanal coffee blends, meticulously crafted from the finest beans sourced worldwide. Each cup delivers a rich story of flavors and aromatic experiences, perfect for every moment. Indulge in our ethically sourced options that cater to every taste, whether you desire a bold espresso or a smooth latte. Join us in celebrating the art of coffee, where passion meets quality, and discover your new favorite brew today, every day!</b></p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary" id="orderBtn">Order Now →</a>
+                    <a href="About Us.html" class="btn btn-secondary">Explore More</a>
+                </div>
+            </div>
+        </div>
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">30+</div>
+                <div><b>Items Of Coffee</b></div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">20+</div>
+                <div><b>Order Running</b></div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">2k+</div>
+                <div><b>Happy Customers</b></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Order Your Coffee</h2>
+            <form id="orderForm">
+                <label for="coffeeType">Select your coffee:</label>
+                <select id="coffeeType" name="coffeeType" required>
+                    <option value="">Choose a coffee</option>
+                    <option value="espresso">Espresso</option>
+                    <option value="latte">Latte</option>
+                    <option value="cappuccino">Cappuccino</option>
+                    <option value="americano">Americano</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                <button type="submit" class="btn btn-primary">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div id="searchModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Search Our Coffee</h2>
+            <input type="text" id="searchInput" placeholder="Search for coffee...">
+            <button type="button" class="btn btn-primary" id="searchSubmit">Search</button>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <p>No items in your cart yet.</p>
+            <button type="button" class="btn btn-primary">Continue Shopping</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Coffee Co.</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white; /* Light background for appeal */
+            margin: 0;
+            padding: 0;
+            color:#333;
+        }
+
+        header {
+            background-color: black; /* Coffee color */
+            color: white;
+            padding: 20px 50px; /* Increased padding for better spacing */
+            text-align: center;
+            position: relative; /* Relative position for alignment */
+        }
+
+        h1 {
+            margin: 5px 0; /* Reduced margin for compactness */
+            font-size: 2.5em; /* Adjusted font size for better fit */
+        }
+
+        nav a {
+            color: white; /* Link color */
+            margin: 0 15px; /* Spacing between links */
+            text-decoration: none; /* Remove underline */
+        }
+
+        nav a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        main {
+            padding: 20px;
+            max-width: 600px; /* Center the main content */
+            margin: 20px auto; /* Center align */
+            background: white; /* White background for form */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        h2, h3 {
+            margin: 15px 0; /* Space above and below headings */
+        }
+
+        ul {
+            list-style-type: none; /* Remove default list styles */
+            padding: 0;
+            margin-bottom: 20px; /* Space below list */
+        }
+
+        li {
+            margin: 10px 0; /* Space between list items */
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px; /* Reduced padding for compactness */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 5px; /* Space between label and input */
+            box-sizing: border-box; /* Include padding in total width */
+        }
+
+        textarea {
+            height: 80px; /* Reduced height for textarea */
+            resize: vertical; /* Allow vertical resize only */
+        }
+
+        button {
+            margin-top: 15px; /* Space above the button */
+            padding: 10px;
+            width: 100%;
+            background-color: #6f4c3e; /* Button color */
+            color: white; /* Button text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px; /* Increase font size for button */
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+
+        button:hover {
+            background-color: blue; /* Darken button on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Coffee Co.</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Menu.html">Menu</a>
+            <a href="About Us.html">About Us</a>
+            <a href="Contact Us.html">Contact Us</a>
+            <a href="Review Us.html">Review Us</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Contact Us</h2>
+        <p>If you have any questions or feedback, feel free to reach out to us!</p>
+
+        <h3>Contact Information</h3>
+        <ul>
+            <li><strong>Phone:</strong> (123) 456-7890</li>
+            <li><strong>Email:</strong> <a href="mailto:info@coffeeco.com">info@coffeeco.com</a></li>
+            <li><strong>Address:</strong> 123 Coffee Lane, Brewtown, CO 80301</li>
+        </ul>
+
+        <h3>Send Us a Message</h3>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <!-- Send Message Button Below Message Field -->
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+</body>
+</html>

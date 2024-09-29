@@ -1,0 +1,215 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+    height: 100%;
+}
+
+body {
+    background-image: url('./images/coff5.jpeg'); /* Replace with your coffee-themed background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #fff; /* White color for text */
+    text-decoration: none; /* Remove underline */
+    margin-left: 20px; /* Space between links */
+    padding: 10px 15px; /* Padding for better clickable area */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for hover effects */
+}
+
+nav a:hover {
+    background-color: blue; /* Light background on hover */
+    color: #000; /* Change text color on hover */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100% - 80px);
+    padding: 0 50px;
+}
+
+.hero {
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex; /* Use flexbox for button alignment */
+    gap: 15px; /* Adjusted gap between buttons */
+    margin-top: 15px; /* Space above buttons */
+}
+
+.btn {
+    padding: 16px 30px; /* Smaller padding for a neater look */
+    border-radius: 25px; /* Slightly rounded corners */
+    font-size: 0.9em; /* Adjusted font size for balance */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensure it behaves like a block */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.btn-primary {
+    background-color: #f0e6d9; /* Background color */
+    color: #000; /* Text color */
+}
+
+.btn-primary:hover {
+    background-color: #d8c4a7; /* Darker on hover */
+}
+
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background */
+    color: #fff; /* Text color */
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Lighter on hover */
+}
+
+.stats {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.stat-item {
+    text-align: left;
+}
+
+.stat-number {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px; /* Set a max width for larger screens */
+    border-radius: 10px;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #f0e6d9;
+    color: #000;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #d8c4a7;
+}
+
+.review-container {
+    max-width: 600px;
+    margin: 50px auto; /* Center the container */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+textarea {
+    resize: none; /* Prevent resizing */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form button {
+    margin-top: 20px;
+}
+
